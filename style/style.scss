@@ -10,10 +10,12 @@ $primary-gray: #7f7f7f;
 }
 
 @mixin title() {
-  text-align: center;
-  color: $primary-blue;
-  font-size: 40px;
-  font-weight: bold;
+  .title {
+    text-align: center;
+    color: $primary-blue;
+    font-size: 40px;
+    font-weight: bold;
+  }
 }
 
 @mixin action-button() {
@@ -152,9 +154,7 @@ body {
   background: #fff;
   padding: 60px 0;
 
-  .title {
-    @include title;
-  }
+  @include title;
 
   .content {
     display: flex;
@@ -212,9 +212,7 @@ body {
   padding: 60px 0;
   border-bottom: 1px solid #9f9f9f;
 
-  .title {
-    @include title;
-  }
+  @include title;
 
   .subtitle {
     color: $primary-gray;
@@ -294,9 +292,7 @@ body {
   align-items: center;
   padding: 60px 0;
 
-  .title {
-    @include title;
-  }
+  @include title;
 
   .content {
     display: grid;
@@ -424,9 +420,7 @@ body {
   padding: 60px 0;
   border-bottom: 1px solid #9f9f9f;
 
-  .title {
-    @include title;
-  }
+  @include title;
 
   .content {
     display: grid;
@@ -460,9 +454,7 @@ body {
   align-items: center;
   padding: 60px 0;
 
-  .title {
-    @include title;
-  }
+  @include title;
 
   .content {
     margin-top: 60px;
@@ -520,9 +512,7 @@ body {
   padding: 60px 0;
   background: #f6f6f6;
 
-  .title {
-    @include title;
-  }
+  @include title;
 
   .content {
     margin-top: 60px;
@@ -597,9 +587,7 @@ body {
   padding: 60px 0;
   background: #f6f6f6;
 
-  .title {
-    @include title;
-  }
+  @include title;
 
   .content {
     display: grid;
@@ -669,9 +657,7 @@ body {
   align-items: center;
   padding: 60px 0;
 
-  .title {
-    @include title;
-  }
+  @include title;
 
   .content {
     display: grid;
@@ -746,9 +732,7 @@ body {
   padding: 60px 0;
   background: #f6f6f6;
 
-  .title {
-    @include title;
-  }
+  @include title;
 
   .content {
     .top {
